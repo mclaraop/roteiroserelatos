@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adiciona box-sizing para melhor controle de layout */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Define line-height para todo o corpo */
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.bg-light-gray {
+    background-color: #c4c3c3e1; /* Um tom de cinza claro */
+    color: #212529; /* Cor do texto para garantir legibilidade */
+}
+
+
+#inicio {
+    background-image: url('banner.jpg'); /* Substitua por uma imagem de fundo */
+    background-size: cover;
+    background-position: center; /* Centraliza a imagem de fundo */
+    color: white; /* Melhora a legibilidade do texto */
+    padding: 100px 0; /* Adiciona um espaço superior e inferior */
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px; /* Adiciona algum espaço interno */
+    background-color: #333; /* Cor de fundo para o footer */
+    color: white; /* Cor do texto do footer */
+    text-align: center; /* Centraliza o texto do footer */
+}
+
+.container {
+    max-width: 1200px; /* Limita a largura do container */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 15px; /* Adiciona espaçamento lateral */
+}
+
+/* Estilos para a sidebar */
+.search-bar {
+    margin-bottom: 20px; /* Espaço abaixo da barra de busca */
+}
+
+.accordion-button {
+    background-color: #007bff; /* Cor do botão da accordion */
+    color: white; /* Cor do texto do botão */
+}
+
+.accordion-body {
+    background-color: #f8f9fa; /* Cor do fundo do corpo da accordion */
+}
+
+/* Estilos para imagens nos posts */
+.img-fluid {
+    border-radius: 5px; /* Borda arredondada para as imagens */
+}
+
+/* Estilos para o autor */
+.post-author {
+    margin-top: 10px; /* Espaço acima do autor */
+}
+
+
