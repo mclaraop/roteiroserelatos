@@ -1,200 +1,317 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roteiros e Relatos</title>
+
+    <!-- Fonte do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css"> <!-- Link para o arquivo CSS -->
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+
+<body class="light-theme">
 
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light-gray">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Roteiros e Relatos</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/sobre.html">Sobre a empresa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/nossotime.html">Nosso time</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #c4c3c3e1;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Roteiros e Relatos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/sobre.html">Sobre a empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/nossotime.html">Nosso time</a>
+                    </li>
+                </ul>
+                <!-- Botão de Mudança de Tema (Toggle Switch) -->
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="theme-toggle" aria-label="Alternar tema">
+                </div>
+            </div>
         </div>
-    </div>
-</nav>
-
+    </nav>
 
     <!-- Banner -->
-    <header id="inicio" class="text-black text-center py-5">
+    <header id="inicio" class="text-center py-5">
         <div class="container d-flex align-items-center">
             <div class="text-section">
                 <h1>Roteiros e Relatos</h1>
                 <h3>Roteiros incríveis e relatos de aventura</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ipsam eos consequuntur doloribus odio in explicabo reprehenderit, dicta temporibus quod magni asperiores modi alias ipsum velit ducimus, quia cum nam!</p>
+                <p>Roteiros e Relatos oferece uma jornada única através de viagens sustentáveis, onde cada experiência é
+                    vivida com respeito ao meio ambiente e às culturas locais. Nosso time de jornalistas, pesquisadores e
+                    cientistas se dedica a explorar destinos que promovem práticas ecológicas e sociais responsáveis,
+                    trazendo histórias inspiradoras de transformação, desafios e aprendizado. Embarque conosco em aventuras
+                    que não só revelam as belezas do mundo, mas também incentivam a preservação e o cuidado com o futuro
+                    do planeta.</p>
             </div>
-            <div class="image-section ml-auto">
-                <img src="images/original/fotos/marten-bjork-wGu1pzDSm3g-unsplash.jpg" alt="Descrição da Imagem" class="rounded-circle" style="width: 300px; height: 300px;">
+            <div class="image-section ms-auto">
+                <img src="images/original/fotos/banner-roteiroerelatos.jpg" alt="Descrição da Imagem"
+                    class="rounded-circle" style="width: 300px; height: 300px;">
             </div>
         </div>
     </header>
 
-        <!-- Conteúdo Principal  -->
-<main class="container my-5">
-    <section id="explore" class="mb-5 text-center bg-light-gray">
-        <h2>Explore o Mundo</h2>
-    </section>
+    <!-- Conteúdo Principal -->
+    <main class="my-5">
 
-    <section id="imagem-exploracao" class="mb-5">
-        <div class="d-flex align-items-start">
-            <div class="text-section flex-grow-1">
-                <p class="text-left">Descubra novas culturas e aventuras emocionantes com nossos roteiros sustentáveis.</p>
-            </div>
-            <div class="image-section ml-auto">
-                <img src="images/original/fotos/marten-bjork-wGu1pzDSm3g-unsplash.jpg" alt="Descrição da Imagem" class="img-fluid" style="width: 400px; height: 250px;">
-            </div>
-        </div>
-    </section>
+        <!-- Explore o Mundo -->
+        <section id="explore" class="mb-5 text-center bg-light-gray" style="width: 100%; padding: 30px 0;">
+            <div class="container">
+                <h2>Explore o Mundo</h2>
+                <div class="row d-flex align-items-start">
 
-    
-    <section id="posts" class="container my-5">
-        <div class="row">
-             <!-- Post 1 com Sidebar - DIVISAO -->
-            <div class="col-md-9 mb-4">
-                <div class="row align-items-center">
-                    <div class="col-md-4">
-                        <img src="images/original/fotos/blake-verdoorn-cssvEZacHvQ-unsplash.jpg" alt="Imagem de Postagem" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover;">
+                    <!-- Texto Esquerda -->
+                    <div class="col-md-4 text-left">
+                        <p>Embarque em uma jornada onde cada passo respeita a natureza e valoriza as culturas locais.
+                            Nossos
+                            roteiros sustentáveis oferecem a oportunidade de explorar o mundo de forma consciente,
+                            apoiando
+                            a preservação ambiental e o bem-estar das comunidades. Através das experiências vividas pelo
+                            nosso time
+                            de jornalistas, pesquisadores e cientistas, você descobrirá como é possível viajar de maneira
+                            responsável, enquanto se conecta com a beleza e a diversidade do planeta.</p>
                     </div>
+
+                    <!-- Imagem Direita -->
                     <div class="col-md-8">
-                        <h2>NOME LUGAR</h2>
-                        <h4>SUBTITULO</h4>
-                        <p>LOREM</p>
-                        <div class="post-author d-flex align-items-center">
-                            <img src="path/to/author-image.jpg" class="rounded-circle" alt="Autor" style="width: 40px; height: 40px;">
-                            <span class="ml-2">Post por Sergio</span>
-                        </div>
+                        <img src="images/original/fotos/placas.jpg" alt="Descrição da Imagem" class="img-fluid"
+                            style="width: 60%; height: auto; border-radius: 10%;">
                     </div>
                 </div>
             </div>
-            
-             <!-- Sidebar DIVISAO -->
-            <div class="col-md-3 mb-4">
-                <div class="search-bar mb-4">
-                    <input type="text" class="form-control" placeholder="Placeholder">
-                </div>
-                <div class="accordion" id="sidebarAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Posts recentes
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#sidebarAccordion">
-                            <div class="accordion-body">
-                                Conteúdo sobre posts recentes.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Temas do Blog
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#sidebarAccordion">
-                            <div class="accordion-body">
-                                Conteúdo sobre temas do blog.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Post 2 DIVISAO -->
-        <div class="row align-items-center mb-4">
-            <div class="col-md-4">
-                <img src="images/original/fotos/blake-verdoorn-cssvEZacHvQ-unsplash.jpg" alt="Imagem de Postagem" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover;">
-            </div>
-            <div class="col-md-8">
-                <h2>ASSUNTO</h2>
-                <h4>SUBTITULO</h4>
-                <p>LOREM</p>
-                <div class="post-author d-flex align-items-center">
-                    <img src="images/cortado/aliceRosto.png" class="rounded-circle" alt="Autor" style="width: 40px; height: 40px;">
-                    <span class="ml-2">Post por Alice</span>
-                </div>
-            </div>
-        </div>
-    
-         <!-- Post 3 DIVISAO -->
-        <div class="row align-items-center mb-4">
-            <div class="col-md-4">
-                <img src="images/original/fotos/blake-verdoorn-cssvEZacHvQ-unsplash.jpg" alt="Imagem de Postagem" class="img-fluid" style="width: 100%; height: 200px; object-fit: cover;">
-            </div>
-            <div class="col-md-8">
-                <h2>VIAGEM</h2>
-                <h4>SUBTITULO</h4>
-                <p>LOREM</p>
-                <div class="post-author d-flex align-items-center">
-                    <img src="path/to/author-image.jpg" class="rounded-circle" alt="Autor" style="width: 40px; height: 40px;">
-                    <span class="ml-2">Post por Elizabeth</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
+        </section>
 
-    <section id="networking" class="mb-5">
-        <h2>Monte um Networking de Viagem</h2>
-        <div class="d-flex align-items-start">
-            <div class="text-section flex-grow-1 mr-3">
-                <p>Conecte-se com outros viajantes e profissionais do setor.</p>
+        <!-- Posts -->
+        <section id="posts" class="container my-5">
+            <div class="row">
+                <div class="col-md-9 order-md-1 mb-4">
+                    <!-- Post 1: Amsterdam -->
+                    <div class="row align-items-center mb-4">
+                        <div class="col-md-4">
+                            <img src="images/original/fotos/amsterdam.jpg" alt="Imagem de Postagem Amsterdam"
+                                class="img-fluid" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                        </div>
+                        <div class="col-md-8">
+                            <h5>Amsterdam: A Cidade dos Canais</h5>
+                            <p>Descubra a beleza dos canais e a vida vibrante da capital holandesa</p>
+                            <div class="post-author d-flex align-items-center">
+                                <span class="ms-2">Post por Alice</span>
+                            </div>
+                            <!-- Botão para Abrir o Modal -->
+                            <button type="button" class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                data-bs-target="#amsterdamModal">
+                                Leia Mais
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Post 2: São Thomé das Letras -->
+                    <div class="row align-items-center mb-4">
+                        <div class="col-md-4">
+                            <img src="images/original/fotos/sao-thome.jpg" alt="Imagem de Postagem São Thomé das Letras"
+                                class="img-fluid" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                        </div>
+                        <div class="col-md-8">
+                            <h6>São Thomé das Letras: Mistérios e Magia nas Montanhas</h6>
+                            <p>Explore as trilhas místicas e a energia única dessa cidade histórica</p>
+                            <div class="post-author d-flex align-items-center">
+                                <span class="ms-2">Post por Sergio</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 3: Chapada dos Veadeiros -->
+                    <div class="row align-items-center mb-4">
+                        <div class="col-md-4">
+                            <img src="images/original/fotos/chapada-dos-veadeiros.jpg"
+                                alt="Imagem de Postagem Chapada dos Veadeiros" class="img-fluid"
+                                style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                        </div>
+                        <div class="col-md-8">
+                            <h5>Chapada dos Veadeiros: Aventura e Natureza em Goiás</h5>
+                            <p>Explore as cachoeiras e o misticismo dessa região única</p>
+                            <div class="post-author d-flex align-items-center">
+                                <span class="ms-2">Post por Elizabeth</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar à Direita -->
+                <div class="col-md-3 order-md-2 mb-4">
+
+                    <!-- Search Bar -->
+                    <div class="search-bar mb-4 d-flex">
+                        <input type="text" class="form-control" placeholder="Pesquisar">
+                        <button class="btn" type="submit">
+                            <img src="images/icons/search.svg" alt="lupa" style="width: 20px; margin-left: 10px;">
+                        </button>
+                    </div>
+
+                    <!-- Menu Expansível -->
+                    <div class="accordion" id="menuExpansivel">
+                        <!-- Posts recentes -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Posts recentes
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne" data-bs-parent="#menuExpansivel">
+                                <div class="accordion-body">Amsterdam: A Cidade dos Canais.</div>
+                            </div>
+                        </div>
+
+                        <!-- Galeria -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Galeria
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#menuExpansivel">
+                                <div class="accordion-body">Galeria de fotos.</div>
+                            </div>
+                        </div>
+
+                        <!-- Categorias -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Categorias
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#menuExpansivel">
+                                <div class="accordion-body">Destinos populares, Tipo de viagem, Temporada e Clima.</div>
+                            </div>
+                        </div>
+
+                        <!-- Blog do Sergio -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Blog do Sergio
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#menuExpansivel">
+                                <div class="accordion-body">São Thomé das Letras: Mistérios e Magia nas Montanhas.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="image-section">
-                <img src="images/original/time/alice.jpg" alt="Descrição da Imagem 1" class="img-fluid rounded mb-3" style="width: 100px; height: 170px;">
-                <img src="images/original/time/elizabeth.jpg" alt="Descrição da Imagem 2" class="img-fluid rounded mb-3" style="width: 100px; height: 170px;">
-                <img src="images/original/time/sergio.jpg" alt="Descrição da Imagem 3" class="img-fluid rounded mb-3" style="width: 100px; height: 170px;">
+        </section>
+
+        <!-- Networking de Viagem -->
+        <section id="networking" class="mb-0" style="background-color: #d7d1d1; padding: 40px;">
+            <div class="container">
+                <h2 class="text-center mb-4">Monte um Networking de Viagem!</h2>
+                <div class="row align-items-center">
+                    <!-- Texto à esquerda -->
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="text-section">
+                            <p>Conecte-se com outros viajantes e amplie suas experiências ao redor do mundo. Nosso
+                                networking de
+                                viagem permite que você compartilhe histórias, dicas e crie novas amizades com pessoas
+                                que têm a mesma
+                                paixão por explorar o planeta. Juntos, podemos tornar cada viagem uma oportunidade única
+                                de aprendizado
+                                e conexão!</p>
+                        </div>
+                    </div>
+
+                    <!-- Imagens à direita -->
+                    <div class="col-md-6">
+                        <div class="image-section d-flex justify-content-start">
+                            <img src="images/original/time/alice.jpg" alt="Descrição da Imagem 1"
+                                class="img-fluid rounded mx-2" style="width: 100px; height: 170px;">
+                            <img src="images/original/time/elizabeth.jpg" alt="Descrição da Imagem 2"
+                                class="img-fluid rounded mx-2" style="width: 100px; height: 170px;">
+                            <img src="images/original/time/sergio.jpg" alt="Descrição da Imagem 3"
+                                class="img-fluid rounded mx-2" style="width: 100px; height: 170px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal para o Post de Amsterdam -->
+    <div class="modal fade" id="amsterdamModal" tabindex="-1" aria-labelledby="amsterdamModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Amsterdam: A Cidade dos Canais</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Amsterdam, a capital da Holanda, é conhecida por seus extensos canais, arquitetura charmosa e
+                        rica história cultural. A cidade oferece uma combinação única de tradição e modernidade, onde
+                        os visitantes podem explorar museus de classe mundial, como o Rijksmuseum e o Museu Van Gogh,
+                        passear de bicicleta pelas ruas pitorescas e desfrutar da vibrante vida noturna.</p>
+                    <p>A cidade é famosa por sua abordagem progressista e acolhedora, tornando-se um destino popular
+                        para viajantes de todo o mundo. Além disso, a sustentabilidade é um aspecto importante em
+                        Amsterdam, com iniciativas ecológicas e um estilo de vida que prioriza o respeito ao meio
+                        ambiente.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Fechar</button>
+                </div>
             </div>
         </div>
-    </section>
-    
-</main>
+    </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-            <div class="footer-contatos">
-                <div class="footer-esquerda">
-                    <h4>Contatos</h4>
-                    <p>Telefone: 6199849-5817</p>
-                    <p>E-mail: roteiroserelatos@gmail.com</p>
-                </div>
+    <footer class="bg-dark text-white text-center py-3" style="margin-top: 0;">
+        <div class="footer-contatos">
+            <div class="footer-esquerda">
+                <h5>Contatos</h5>
+                <p>Telefone: 6199849-5817</p>
+                <p>E-mail: roteiroserelatos@gmail.com</p>
             </div>
-            <div class="footer-inferior">
-                <p>Todos os direitos reservados a @roteiroserelatos 2024</p>
-            </div>
-        </footer>
+        </div>
+        <div class="footer-inferior">
+            <p>Todos os direitos reservados a @roteiroserelatos 2024</p>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="scripts/script.js"></script><!-- Link para o arquivo JS -->
-    </body>
+
+    <!-- Script JS Personalizado -->
+    <script src="scripts/script.js"></script>
+</body>
+
 </html>
