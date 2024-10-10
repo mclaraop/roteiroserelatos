@@ -10,10 +10,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body class="home"> <!-- Adiciona a classe 'home' -->
+<body class="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #c4c3c3e1;">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Roteiros e Relatos</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -39,6 +42,43 @@
         </div>
     </nav>
 
+    <!-- Conteúdo Principal -->
+<main class="container my-5">
+    <div class="row">
+        <!-- Nova Seção para Viagens, Alice e Japão -->
+        <div class="col-md-8">
+            <div class="d-flex justify-content-center mb-3"> <!-- Mudança aqui -->
+                <a href="#" class="btn btn-secondary me-2">Viagens</a>
+                <a href="#" class="btn btn-secondary me-2">Alice</a>
+                <a href="#" class="btn btn-secondary">Japão</a>
+            </div>
+            <h1>Minha viagem ao Japão!</h1>
+            <div class="image-container" style="height: 300px; overflow: hidden; margin-bottom: 20px; margin-right: 40px;">
+                <img src="../images/original/fotos/bannerjapao.jpg" alt="Minha viagem ao Japão" class="img-fluid" style="width: 100%; border-radius: 10px; height: auto;">
+            </div>
+            <p>Olá, eu sou Alice, e recentemente tive a incrível oportunidade de viajar para o Japão! Essa foi uma experiência que
+                eu sempre sonhei em realizar, e posso dizer que superou todas as minhas expectativas.
+                Assim que cheguei em Tóquio, fiquei maravilhada com a energia da cidade. As luzes neon, os sons e a mistura de
+                tradição e modernidade me deixaram fascinada. Um dos meus momentos favoritos foi visitar o Mercado de Tsukiji, onde
+                experimentei o sushi mais fresco que já provei na vida. Foi uma verdadeira explosão de sabores!
+                Outra parte inesquecível da viagem foi minha estadia em um ryokan, uma tradicional hospedagem japonesa. Tive a
+                chance de relaxar em uma onsen, uma fonte termal, e isso foi um verdadeiro bálsamo para a alma. A tranquilidade e o
+                ambiente sereno me fizeram sentir renovada.
+                Durante a primavera, tive a sorte de ver as cerejeiras em flor. Caminhar sob aquelas árvores cheias de flores rosa
+                foi como entrar em um sonho. Cada pétala que caía parecia uma bênção, e eu sabia que aqueles momentos ficariam
+                gravados na minha memória para sempre.
+                A hospitalidade do povo japonês e a eficiência do transporte público foram outras coisas que me impressionaram. Tudo
+                funcionava de forma tão organizada e respeitosa. Ao voltar para casa, trouxe comigo não apenas lembranças, mas
+                também um profundo apreço pela cultura japonesa e a certeza de que um dia voltarei.</p>
+            <p>Data da postagem: dd/mm/aaaa</p>
+        </div>
+        <div class="col-md-4">
+            <h2>SOBRE O AUTOR</h2>
+            <img src="../images/original/time/alice.jpg" alt="Alice" class="img-fluid" style="max-width: 80%; border-radius: 10px; height: auto; margin-bottom: 20px;">
+            <h4>Olá eu sou Alice!</h4>
+        </div>        
+    </div>
+</main>
 
 
     <!-- Footer -->
