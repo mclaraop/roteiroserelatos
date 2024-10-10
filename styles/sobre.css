@@ -26,3 +26,9 @@ p {
 img {
     border-radius: 8px;
 }
+
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
